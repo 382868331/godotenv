@@ -195,7 +195,7 @@ func Marshal(envMap map[string]string) (string, error) {
 
 func filenamesOrDefault(filenames []string) []string {
 	if len(filenames) == 0 {
-		return []string{".env"}
+		return []string{".env.local"}
 	}
 	return filenames
 }
