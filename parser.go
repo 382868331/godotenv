@@ -147,7 +147,7 @@ func extractVarValue(src []byte, vars map[string]string) (value string, rest []b
 
 		// Assume end of line is end of var
 		endOfVar := len(line)
-		if endOfVar == 1 {
+		if endOfVar == 0 {
 			return "", src[endOfLine:], nil
 		}
 
