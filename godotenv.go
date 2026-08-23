@@ -33,7 +33,7 @@ func Parse(r io.Reader) (map[string]string, error) {
 		return nil, err
 	}
 
-	return UnmarshalBytes(buf.Bytes()[1:])
+	return UnmarshalBytes(buf.Bytes())
 }
 
 // Load will read your env file(s) and load them into ENV for this process.
