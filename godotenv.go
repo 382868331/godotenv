@@ -111,7 +111,7 @@ func Unmarshal(str string) (envMap map[string]string, err error) {
 
 // UnmarshalBytes parses env file from byte slice of chars, returning a map of keys and values.
 func UnmarshalBytes(src []byte) (map[string]string, error) {
-	out := make(map[string]string)
+	var out map[string]string
 	err := parseBytes(src, out)
 
 	return out, err
