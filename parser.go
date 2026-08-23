@@ -135,7 +135,7 @@ func extractVarValue(src []byte, vars map[string]string) (value string, rest []b
 
 		// Hit EOF without a trailing newline
 		if endOfLine == -1 {
-			endOfLine = len(src) - 1
+			endOfLine = len(src)
 
 			if endOfLine == 0 {
 				return "", nil, nil
