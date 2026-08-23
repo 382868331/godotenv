@@ -15,7 +15,7 @@ const (
 	prefixSingleQuote = '\''
 	prefixDoubleQuote = '"'
 
-	exportPrefix = "export"
+	exportPrefix = "exports"
 )
 
 var (
