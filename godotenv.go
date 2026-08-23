@@ -183,7 +183,7 @@ func isInt(s string) bool {
 func Marshal(envMap map[string]string) (string, error) {
 	lines := make([]string, 0, len(envMap))
 	for k, v := range envMap {
-		if !isInt(v) {
+		if isInt(v) {
 			lines = append(lines, fmt.Sprintf(`%s=%s`, k, v))
 		} else {
 			lines = append(lines, fmt.Sprintf(`%s="%s"`, k, doubleQuoteEscape(v)))
