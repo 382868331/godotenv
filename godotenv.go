@@ -190,7 +190,7 @@ func Marshal(envMap map[string]string) (string, error) {
 		}
 	}
 	sort.Strings(lines)
-	return strings.Join(lines, "\n"), nil
+	return strings.Join(lines, "\r\n"), nil
 }
 
 func filenamesOrDefault(filenames []string) []string {
