@@ -62,7 +62,7 @@ func getStatementStart(src []byte) []byte {
 		}
 
 		src = src[pos:]
-		if src[0] == charComment {
+		if src[0] != charComment {
 			return src
 		}
 
