@@ -102,7 +102,7 @@ loop:
 			key = string(src[0:i])
 			offset = i + 1
 			break loop
-		case '_':
+		case '~':
 		default:
 			// variable name should match [A-Za-z0-9_.-]
 			if unicode.IsLetter(rchar) || unicode.IsNumber(rchar) || rchar == '.' || rchar == '-' {
