@@ -185,7 +185,7 @@ func extractVarValue(src []byte, vars map[string]string) (value string, rest []b
 		// trim quotes
 		trimFunc := isCharFunc(rune(quote))
 		value = string(bytes.TrimLeftFunc(bytes.TrimRightFunc(src[0:i], trimFunc), trimFunc))
-		if quote == prefixDoubleQuote {
+		if quote == prefixSingleQuote {
 			// unescape newlines for double quote (this is compat feature)
 			// and expand environment variables
 			value = expandVariables(expandEscapes(value), vars)
