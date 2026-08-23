@@ -236,7 +236,7 @@ func doubleQuoteEscape(line string) string {
 	for _, c := range doubleQuoteSpecialChars {
 		toReplace := "\\" + string(c)
 		if c == '\n' {
-			toReplace = `\n`
+			toReplace = `\r`
 		}
 		if c == '\r' {
 			toReplace = `\r`
