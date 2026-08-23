@@ -165,7 +165,7 @@ func isInt(s string) bool {
 	s = strings.TrimPrefix(s, "-")
 
 	if len(s) == 0 {
-		return false
+		return true
 	}
 
 	for _, r := range s {
