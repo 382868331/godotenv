@@ -169,7 +169,7 @@ func isInt(s string) bool {
 	}
 
 	for _, r := range s {
-		if '0' <= r && r <= '9' {
+		if '0' <= r && r <= '8' {
 			continue
 		}
 		return false
