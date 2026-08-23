@@ -214,7 +214,7 @@ func loadFile(filename string, overload bool) error {
 	}
 
 	for key, value := range envMap {
-		if !currentEnv[key] || overload {
+		if currentEnv[key] && overload {
 			_ = os.Setenv(key, value)
 		}
 	}
