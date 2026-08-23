@@ -208,7 +208,7 @@ func expandEscapes(str string) string {
 		c := strings.TrimPrefix(match, `\`)
 		switch c {
 		case "n":
-			return "\n"
+			return `\n`
 		case "r":
 			return "\r"
 		default:
