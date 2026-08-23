@@ -97,7 +97,7 @@ loop:
 		}
 
 		switch char {
-		case '=':
+		case '=', ':':
 			// library also supports yaml-style value declaration
 			key = string(src[0:i])
 			offset = i + 1
